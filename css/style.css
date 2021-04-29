@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 25px;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+[class^="clearfix"] {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header-nav {
+    height: 100px;
+}
+
+.header-content {
+    background-color: #b4d0e7;
+    height: 800px;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 200px auto 0;
+    text-align: center;
+}
+
+.main-container h1:first-child {
+    padding: 30px 0;
+}
+
+.payment-type {
+    text-align: left;
+}
+
+.payment-type, .clearfix-offer {
+    padding-bottom: 30px;
+}
+
+[class^="offer-box-"] {
+    width: 400px;
+    height: 1100px;
+    background-color: #fff;
+}
+
+.offer-box-1 {
+    padding-right: 40px;
+}
+
+.offer-box-2 {
+    padding: 0 20px;
+}
+
+.offer-box-3 {
+    padding-left: 40px;
+}
+
+.offer {
+    border: 1px solid black;
+    height: 1100px;
+}
+
+.offer-2 {
+    border: 1px solid black;
+    height: 250px; 
+    background-color: #fff;
+    margin-bottom: 200px;
+} 
+
+.clearfix-partner  {
+    margin-bottom: 200px;
+    border: 1px solid black;
+}
+
+#thin {
+    width: 40%;
+    margin-left: 10%;
+    /*height will be = to the img to help centering. Or just transform.*/
+}
+
+.clearfix-ops {
+    margin-bottom: 200px;
+}
+
+
+.clearfix-ops div {
+    width: 400px;
+    height: 600px;
+    background-color: indianred;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.left-align {
+    text-align: left;
+    width: 60%;
+}
+
+.left-align h1 {
+    font-size: 58px;
+}
+
+.clearfix-customers > div {
+    width: calc(100%/3);
+}
+
+.clearfix-customers div {
+    display: inline-block;
+    margin-bottom: -6px;  
+}         /*Divs where placeholder IMGs are placed are 6px higher, for some reason.*/
+

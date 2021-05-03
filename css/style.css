@@ -28,10 +28,13 @@ h1, h2, h3, h4, h5 {
     font-family: 'Raleway', sans-serif;
 }
 
+header {
+    font-size: 17px;
+}
+
 .header-nav {
     height: 80px;
     padding: 25px 10px;
-    font-size: 17px;
 }
 
 .header-nav img {
@@ -64,7 +67,6 @@ h1, h2, h3, h4, h5 {
     margin-left: 30px;
 }
 
-
 .header-nav li:last-child {
     margin: 0;
 }
@@ -76,7 +78,7 @@ h1, h2, h3, h4, h5 {
 
 .header-content {
     background-color: #b4d0e7;
-    height: 700px;
+    height: 750px;
 }
 
 .header-container {
@@ -86,13 +88,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .header-container h1 {
-    font-size: 60px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 70px;
     margin-bottom: 35px ;
 }
 
 .header-container .fl {
     width: 22%;
-    font-size: 17px;
     line-height: 25px;
 }
 
@@ -127,7 +129,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .main-container input:not(:first-child) {
-    margin-left: 25px ;
+    margin-left: 25px;
 }
 
 .main-container h1 {
@@ -164,7 +166,7 @@ h1, h2, h3, h4, h5 {
     padding-left: 40px;
 }
 
-.offer {
+.offer, .offer-2 {
     border: 1px solid #aeb6be;
 }
 
@@ -210,19 +212,24 @@ h1, h2, h3, h4, h5 {
     height: 200px;
 }
 
-.offer-type-details div div {
+[class^="info"] {
+    padding-bottom: 20px;
+}
+
+[class^="info"] * {
     display: inline-block;
+}
+
+[class^="info"] div:nth-child(2) {
+    width: 80%;
+    vertical-align: top;
+    margin-left: 5px;
+    line-height: 22px;
 }
 
 [class^="icon"] {
     width: 10%;
 }
-
-.users, .space, .features {
-    width: 80%;
-    vertical-align: top;
-}
-
 
 .offer-type-details-2{
     margin-top: 30px;
@@ -235,22 +242,8 @@ h1, h2, h3, h4, h5 {
     line-height: 22px;
 }
 
-[class^="info"] {
-    padding-bottom: 20px;
-}
-
-.offer-type-details [class^="info"] div:nth-child(2) {
-    line-height: 22px;
-}
-
-.icon-2 {
-    height: 24px;
-    position: relative;
-}
-
 .icon-2 img {
     width: 24px;
-    position: absolute;
 }
 
 .try-button {
@@ -268,26 +261,24 @@ h1, h2, h3, h4, h5 {
 
 
 .offer-2 {
-    border: 1px solid #aeb6be;
     height: 250px; 
-    background-color: #fff;
     margin-bottom: 200px;
 } 
 
-.offer-padding p {
+.offer-2 p {
     font-size: 16px;
 }
 
-.offer-padding h3, .offer-padding h5 {
+.offer-2 h3, .offer-2 h5 {
     margin-bottom: 15px;
 }
 
-.offer-padding .button {
+.offer-2 .button {
     position: absolute;
     top: 35px;
     right: 35px;
     padding: 10px 35px;
-    font-size: 21px;
+    font-size: 20px;
 }
 
 .clearfix-partner  {
@@ -297,7 +288,7 @@ h1, h2, h3, h4, h5 {
 
 .clearfix-partner .size {
     width: 50%;
-    height: 510px;
+    height: 500px;
     position: relative;
 }
 
@@ -313,14 +304,16 @@ h1, h2, h3, h4, h5 {
     transform: translate(-50%, -50%);
 }
 
+.clearfix-partner p, .clearfix-partner .button {
+    font-size: 17px;
+}
+
 .clearfix-partner p {
     margin: 35px 0;
-    font-size: 17px;
     line-height: 27px;
 }
 
 .text .button {
-    font-size: 17px;
     background-color: #fff;
     color: #000;
     border: 1px solid black;
@@ -334,7 +327,7 @@ h1, h2, h3, h4, h5 {
 
 .clearfix-ops div {
     width: 400px;
-    height: 610px;
+    height: 630px;
     padding: 30px;
 }
 
@@ -354,28 +347,21 @@ h1, h2, h3, h4, h5 {
 }
 
 .customer-width {
-    width: 62%;
+    width: 750px;
+    margin-bottom: 40px;
 }
 
 .customer-width h1, .customer-width a {
     margin-bottom: 30px;
 }
 
-.clearfix-customers {
-    margin-top: 40px;
-}
-
 .clearfix-customers > div {
     width: calc(100%/3);
 }
 
-.clearfix-customers .fl .fl {
-    width: 50%;
-}
-
 [class*="team"] {
-    position: relative;    /*Little trick I learned to make squares without height*/
-    width: 50%;
+    position: relative;  /*Little trick to make squares without height*/
+    width: 50%;          /*https://stackoverflow.com/a/13625843*/
     height: 0;
     padding-bottom: 50%;
 }
@@ -389,7 +375,7 @@ h1, h2, h3, h4, h5 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    filter: invert(100%) ;
+    filter: invert(1);
 }
 
 .team-1 {
@@ -421,7 +407,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .team-8 {
-    padding-bottom: 46.9%;        /*Lighter yellow frame around last team*/
+    padding-bottom: 47%;        /*Lighter yellow frame around last team*/
     background-color: #ffd830;
     border: 10px solid #ffeb98;
 }
@@ -455,6 +441,7 @@ h1, h2, h3, h4, h5 {
 .free-trial {
     background-color: #b4d0e7;
     position: relative;
+    bottom: 1px;   /*Fixes a minuscule gap below the customers' squares*/
     height: 350px;
 }
 
@@ -499,14 +486,16 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 200px;
 }
 
-.faq p {
+.faq li * {
     display: inline-block;
+}
+
+.faq p {
     width: 65%;
 }
 
 .faq div {
-    display: inline-block;
-    width: calc(35% - 5px);
+    width: calc(35% - 5px); /*Inline-block small gap in the way (as always...)*/
     text-align: right;
     font-weight: bold;
     vertical-align: top;
@@ -533,10 +522,6 @@ footer .fl {
     width: 20%;
 }
 
-footer h4 {
-    font-size: 18px;
-}
-
 footer li {
     padding: 10px 0;
     list-style: none;
@@ -558,4 +543,10 @@ footer hr {
 
 .language img {
     vertical-align: middle;
+    margin-right: 5px;
+}
+
+.language span::after {
+    content: "\25B4";
+    margin-left: 3px ;
 }

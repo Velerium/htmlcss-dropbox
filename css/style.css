@@ -28,6 +28,13 @@ h1, h2, h3, h4, h5 {
     font-family: 'Raleway', sans-serif;
 }
 
+.transform {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 header {
     font-size: 17px;
 }
@@ -78,7 +85,6 @@ header {
 
 .header-content {
     background-color: #b4d0e7;
-    height: 750px;
 }
 
 .header-container {
@@ -90,12 +96,12 @@ header {
 .header-container h1 {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 70px;
-    margin-bottom: 35px ;
 }
 
 .header-container .fl {
     width: 22%;
     line-height: 25px;
+    margin-top: 75px;
 }
 
 .header-button {
@@ -114,8 +120,13 @@ header {
     font-weight: bold;
 }
 
+.header-container img {
+    position: relative;
+    top: 75px;
+}
+
 .main-container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 150px auto 0;
 }
 
@@ -150,7 +161,7 @@ header {
 }
 
 [class^="offer-box-"] {
-    width: 400px;
+    width: calc(100% / 3);
     background-color: #fff;
 }
 
@@ -298,10 +309,6 @@ header {
 
 .clearfix-partner .text {
     width: 65%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .clearfix-partner p, .clearfix-partner .button {
@@ -371,10 +378,6 @@ header {
 }
 
 [class*="team"] img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     filter: invert(1);
 }
 
@@ -447,10 +450,6 @@ header {
 
 .free-trial-size {
     width: 1200px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .free-trial-size * {
@@ -495,7 +494,7 @@ header {
 }
 
 .faq div {
-    width: calc(35% - 5px); /*Inline-block small gap in the way (as always...)*/
+    width: 40px;
     text-align: right;
     font-weight: bold;
     vertical-align: top;
